@@ -1,0 +1,34 @@
+import { FC } from "react";
+
+const Footer: FC = () => {
+  return (
+    <footer className="bg-gray-800 text-white p-6 shadow-lg mt-auto">
+      <div className="container flex justify-around items-start">
+        <div>
+          <h3 className="text-xl font-semibold mb-2">Contacts</h3>
+          <p>
+            <span className="font-semibold">Name:</span> P. Afanasenko
+          </p>
+          <p>
+            <span className="font-semibold">GitHub username:</span> leanox322
+          </p>
+          <p>
+            <span className="font-semibold">Email:</span> pashash4rk@gmail.com
+          </p>
+        </div>
+
+        <div>
+          <h3 className="text-xl font-semibold mb-2">Tech Stack</h3>
+          <ul className="list-disc pl-5">
+            <li>Next.js</li>
+            <li>TypeScript</li>
+            <li>REST & GraphQL</li>
+            <li>Tailwind</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
