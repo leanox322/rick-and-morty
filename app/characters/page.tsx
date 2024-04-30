@@ -1,7 +1,8 @@
 import { NextPage } from "next";
+import { Characters } from "../(components)";
 
 const CharactersPage: NextPage = () => {
-  return <div>Characters</div>;
+  return <Characters />;
 };
 
 export default CharactersPage;

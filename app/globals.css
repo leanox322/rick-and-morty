@@ -14,13 +14,25 @@ body {
 }
 
 section {
-  @apply py-8;
+  @apply py-8 min-h-screen;
 }
 
-.pagination-btn {
-  @apply px-4 py-2 border rounded;
+.btn-primary {
+  @apply px-4 py-2 border rounded cursor-pointer;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 cursor-pointer;
 }
 
 .content-frame {
   @apply p-5 border-gray-300 border-2 rounded-lg;
+}
+
+.card-item {
+  @apply flex items-center border border-gray-300 p-4 rounded mb-3 hover:bg-gray-100;
+}
+
+.card-img {
+  @apply w-20 h-20 mr-4 rounded;
 }

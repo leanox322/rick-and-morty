@@ -1,11 +1,11 @@
 import axios from "axios";
-import { IAllEpisodes } from "./types";
+import { IEpisodesResponse } from "./types";
 
 export const getEpisodes = async (
   currentPage: number
-): Promise<IAllEpisodes | null> => {
+): Promise<IEpisodesResponse | null> => {
   try {
-    const response = await axios.get<IAllEpisodes>(
+    const response = await axios.get<IEpisodesResponse>(
       `${process.env.NEXT_PUBLIC_BASE_URL}/episode?page=${currentPage}`
     );
     return response.data;

@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import Episodes from "../(components)/Episodes";
+import { Episodes } from "../(components)";
 
 const EpisodesPage: NextPage = () => {
   return <Episodes />;

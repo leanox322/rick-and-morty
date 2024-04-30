@@ -85,7 +85,7 @@ const Modal: FC<IModal> = ({ isOpen, onClose, episode }) => {
               {episode?.characters?.length > charactersToShow && (
                 <button
                   onClick={loadMoreCharacters}
-                  className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+                  className="btn-secondary mt-4"
                 >
                   Load More
                 </button>

@@ -1,3 +1,5 @@
+import { IPageInfo } from "@/app/types";
+
 export interface IEpisode {
   id: number;
   name: string;
@@ -14,14 +16,7 @@ export interface ICharacter {
   image: string;
 }
 
-interface IPageInfo {
-  count: number;
-  pages: number;
-  next: string | null;
-  prev: string | null;
-}
-
-export interface IAllEpisodes {
+export interface IEpisodesResponse {
   info: IPageInfo;
   results: IEpisode[];
 }
