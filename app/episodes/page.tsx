@@ -1,7 +1,8 @@
 import { NextPage } from "next";
+import Episodes from "../(components)/Episodes";
 
 const EpisodesPage: NextPage = () => {
-  return <div>Episodes</div>;
+  return <Episodes />;
 };
 
 export default EpisodesPage;

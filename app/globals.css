@@ -12,3 +12,15 @@ body {
     @apply w-[1360px] mx-auto;
   }
 }
+
+section {
+  @apply py-8;
+}
+
+.pagination-btn {
+  @apply px-4 py-2 border rounded;
+}
+
+.content-frame {
+  @apply p-5 border-gray-300 border-2 rounded-lg;
+}

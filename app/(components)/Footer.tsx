@@ -1,4 +1,5 @@
 import { FC } from "react";
+import Link from "next/link";
 
 const Footer: FC = () => {
   return (
@@ -10,11 +11,17 @@ const Footer: FC = () => {
             <span className="font-semibold">Name:</span> P. Afanasenko
           </p>
           <p>
-            <span className="font-semibold">GitHub username:</span> leanox322
+            <span className="font-semibold">GitHub:</span> leanox322
           </p>
           <p>
             <span className="font-semibold">Email:</span> pashash4rk@gmail.com
           </p>
+          <Link
+            href="https://rickandmortyapi.com/documentation/#episode-schema"
+            className="font-semibold hover:text-yellow-400"
+          >
+            API Link
+          </Link>
         </div>
 
         <div>
