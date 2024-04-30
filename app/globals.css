@@ -21,8 +21,16 @@ section {
   @apply px-4 py-2 border rounded cursor-pointer;
 }
 
+.btn-primary:disabled {
+  @apply cursor-default;
+}
+
 .btn-secondary {
   @apply px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 cursor-pointer;
+}
+
+.btn-secondary:disabled {
+  @apply cursor-default;
 }
 
 .content-frame {

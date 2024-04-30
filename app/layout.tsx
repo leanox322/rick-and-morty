@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header, Footer } from "./(components)";
+import ApolloWrapper from "./(provider)/ApolloWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        <div className="container">{children}</div>
-        <Footer />
+        <ApolloWrapper>
+          <Header />
+          <div className="container">{children}</div>
+          <Footer />
+        </ApolloWrapper>
       </body>
     </html>
   );

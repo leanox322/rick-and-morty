@@ -1,5 +1,10 @@
 import { IPageInfo } from "@/app/types";
 
+interface ILocation {
+  name: string;
+  url: string;
+}
+
 export interface ICharactersResponse {
   info: IPageInfo;
   results: ICharacter[];
@@ -18,9 +23,4 @@ export interface ICharacter {
   episode: string[];
   url: string;
   created: string;
-}
-
-export interface ILocation {
-  name: string;
-  url: string;
 }

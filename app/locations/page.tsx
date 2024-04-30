@@ -1,7 +1,8 @@
 import { NextPage } from "next";
+import { Locations } from "../(components)";
 
 const LocationsPage: NextPage = () => {
-  return <div>Locations</div>;
+  return <Locations />;
 };
 
 export default LocationsPage;

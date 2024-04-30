@@ -101,7 +101,7 @@ const Characters: FC = () => {
             />
           </div>
         ) : (
-          <p>Loading characters...</p>
+          <span>Loading characters...</span>
         )}
       </div>
     </section>

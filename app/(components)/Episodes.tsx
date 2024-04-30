@@ -4,6 +4,7 @@ import { FC, useEffect, useState } from "react";
 import { getEpisodes } from "../(api)/episodes";
 import { IEpisodesResponse, IEpisode } from "../(api)/episodes/types";
 import { Modal, Pagination } from "../(components)";
+import EpisodeModal from "./modal/EpisodeModal";
 
 const Episodes: FC = () => {
   const [allEpisodes, setAllEpisodes] = useState<IEpisodesResponse | null>(
@@ -61,16 +62,14 @@ const Episodes: FC = () => {
             />
           </div>
         ) : (
-          <p>Loading episodes...</p>
+          <span>Loading episodes...</span>
         )}
       </div>
 
       {isModalOpen && selectedEpisode && (
-        <Modal
-          isOpen={isModalOpen}
-          onClose={closeModal}
-          episode={selectedEpisode}
-        />
+        <Modal isOpen={isModalOpen} onClose={closeModal}>
+          <EpisodeModal episode={selectedEpisode} />
+        </Modal>
       )}
     </section>
   );
