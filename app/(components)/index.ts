@@ -1,0 +1,9 @@
+export { default as Pagination } from "./Pagination";
+export { default as Episodes } from "./Episodes";
+export { default as Characters } from "./Characters";
+export { default as Locations } from "./Locations";
+export { default as Header } from "./layout/Header";
+export { default as Footer } from "./layout/Footer";
+export { default as Modal } from "./modal/Modal";
+export { default as EpisodeModal } from "./modal/EpisodeModal";
+export { default as LocationModal } from "./modal/LocationModal";

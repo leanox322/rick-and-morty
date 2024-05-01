@@ -3,8 +3,7 @@
 import { FC, useEffect, useState } from "react";
 import { getEpisodes } from "../(api)/episodes";
 import { IEpisodesResponse, IEpisode } from "../(api)/episodes/types";
-import { Modal, Pagination } from "../(components)";
-import EpisodeModal from "./modal/EpisodeModal";
+import { Modal, Pagination, EpisodeModal } from "../(components)";
 
 const Episodes: FC = () => {
   const [allEpisodes, setAllEpisodes] = useState<IEpisodesResponse | null>(

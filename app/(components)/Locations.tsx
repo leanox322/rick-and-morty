@@ -4,9 +4,8 @@ import { FC, useState } from "react";
 import { useQuery } from "@apollo/client";
 import { GET_LOCATIONS } from "../(api)/locations";
 import { ILocationResponse } from "../(api)/locations/types";
-import { Pagination, Modal } from "../(components)";
+import { Pagination, Modal, LocationModal } from "../(components)";
 import { ILocation } from "../(api)/locations/types";
-import { LocationModal } from "./modal";
 
 const Locations: FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
